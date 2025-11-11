@@ -20,7 +20,7 @@ A production-minded, real-time trading monitor that streams multi-symbol prices,
 flowchart LR
   FEED[Market Feed / Sim] -->|ticks| MON[Monitor]
   MON -->|update_last_price / append_intraday| STATE[(state.json)]
-  MON --> SEG[segments/ (2-min buffers)]
+  MON --> SEG[segments — 2-min buffers]
   STRAT[Stateful Strategy] -->|signals| BUS[(Async BUS)]
   BUS --> EXEC[Execution + Costs]
   EXEC -->|acks/costs| STATE

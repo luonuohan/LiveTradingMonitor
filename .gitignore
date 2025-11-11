@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.egg-info/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Streamlit & local storage
+.streamlit/
+storage/*
+!storage/.gitkeep
+storage/segments/*
+!storage/segments/.gitkeep
+
+# Logs & artifacts
+*.jsonl
+*.gz
+*.log
+
+# Secrets
+.secrets/
